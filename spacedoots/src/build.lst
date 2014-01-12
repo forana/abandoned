@@ -1,0 +1,49 @@
+# Cocoon framework
+thirdparty/CocoonJS.js
+thirdparty/CocoonJS_App.js
+
+# General utility
+thirdparty/underscore-1.4.4.js
+thirdparty/json2.js
+util/extdraw.js
+util/imagecache.js
+util/audiocache.js
+thirdparty/darmok.js
+
+# Browser adapters
+shim/zoom.js
+shim/polyfill.js
+
+# Resource enums
+constants/sfx.js
+constants/namelists.js
+
+# App-specific framework
+game/core.js
+framework/click.js
+framework/button.js
+game/action.js
+
+# Animations
+animation/base.js
+animation/laser.js
+
+# Models
+model/star.js
+model/proto.js
+model/consumables.js
+model/ship.js
+model/hull.js
+model/weapons.js
+model/expansions.js
+model/engines.js
+
+# Not really util or game but crucial as hell
+model/sectors.js
+game/save.js
+
+# The app itself
+game/screen.battle.js
+game/screen.field.js
+game/screen.base.js
+game/screen.title.js

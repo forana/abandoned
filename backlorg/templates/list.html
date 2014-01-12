@@ -1,0 +1,92 @@
+{% extends "root.html" %}
+{% block body %}
+	<section class="controls">
+		<ul>
+			<li><a href="javascript:void()" id="link-backlog">Your backlog</a></li>
+			<li><a href="javascript:void()" id="link-archived">Archived items</a></li>
+		</ul>
+		
+		<form name="filters" onsubmit="return false">
+			<ul>
+				<li><input type="checkbox" id="cb-reset" checked /> (all)</li>
+				<li><input type="checkbox" name="tag" value="1" checked /> <span class="tag">Code</span></li>
+				<li><input type="checkbox" name="tag" value="2" checked /> <span class="tag">Purchasing</span></li>
+				<li><input type="checkbox" name="tag" value="3" checked /> <span class="tag">Draw</span></li>
+				<li><input type="checkbox" name="tag" value="4" checked /> <span class="tag">Diagram</span></li>
+				<li><input type="checkbox" name="tag" value="5" checked /> <span class="tag">Build</span></li>
+			</ul>
+		</form>
+	</section>
+	<section class="list">
+		<article class="item add">
+			<form name="additem" onsubmit="return false">
+				<div>
+					<section class="name">
+						<input type="text" name="title" placeholder="Type a new idea here" />
+						<button type="submit">Add</button>
+					</section>
+					<section class="tags">
+						<input type="text" name="tags" placeholder="Tags" />
+					</section>
+				</div>
+			</form>
+		</article>
+		<div id="items"></div>
+	</section>
+
+	<section id="templates">
+		<div name="itemList">
+			[=items:showItem=]
+		</div>
+
+		<div name="showItem">
+			<article class="item">
+				<section class="name">[%name%]</section>
+				<section class="tags">[=tags:showTag=]</section>
+			</article>
+		</div>
+
+		<div name="showTag">
+			<span class="tag">[%name%]</span>
+		</div>
+
+		<div name="noItems">
+			<article class="note">You have no backlog items at the moment. Add one above!</article>
+		</div>
+
+		<div name="itemsFiltered">
+			<article class="note">(all backlog items filtered out)</article>
+		</div>
+	</section>
+{% endblock %}
+
+{% block scripts %}
+	<script src="static/js/jquery.checkboxes.js"></script>
+
+	<script>
+		$(document).on("ready", function() {
+			Backlorg.initModels([],[
+				{name: "Space game", tags: [{name: "Code", id: "1"}, {name: "Diagram", id: "4"}]},
+				{name: "Lego wall", tags: [{name: "Purchasing", id: "2"}]},
+				{name: "Perler Pallet", tags: [{name: "Diagram", id: "4"}, {name: "Purchasing", id: "2"}]}
+			]);
+
+			$("#templates div").loadTemplates();
+
+			function showList() {
+				var values = $("form[name=filters] input[name=tag]").getCheckedValues();
+				Backlorg.showList($("#items"), values);
+			}
+
+			$("form[name=filters] input[type=checkbox]").groupCheckboxes("#cb-reset").on("change",function() {
+				showList();
+			});
+
+			$("form[name=additem]").on("submit", function() {
+				console.log("shit");
+			});
+
+			showList();
+		});
+	</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UML Class diagram editor</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="raphael-min.js"></script>
+		<script type="text/javascript" src="extend.js"></script>
+		<script type="text/javascript" src="json.js"></script>
+		<script type="text/javascript" src="uml.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				UML.init(document.getElementById("editor"));
+				
+				UML.addElement(new UML.ClassElement());
+			});
+		</script>
+	</head>
+	<body class="bar-left">
+		<div id="controls">
+			<fieldset id="toolbox">
+				<legend>Tools</legend>
+				<button title="Class">Class</button>
+				<button title="Interface">Interface</button>
+				<button title="Implements"><img src="images/button-implements.png" alt="Implements" /></button>
+				<button title="Extends"><img src="images/button-extends.png" alt="Extends" /></button>
+				<button title="Has N"><img src="images/button-hasn.png" alt="Has N" /></button>
+				<button title="Has many"><img src="images/button-hasmany.png" alt="Has many" /></button>
+				<button title="Note">Note</button>
+				<button title="Select"><img src="images/button-select.png" alt="Select" /></button>
+			</fieldset>
+			
+			<div>Made by <a href="http://alexforan.com/">Alex Foran</a></div>
+			<div>This is only intended for my own personal use. You're welcome to use it as well, but I make no guarantees as to its functionality or availability.</div>
+		</div>
+		<div id="editor">
+		</div>
+	</body>
+</html>

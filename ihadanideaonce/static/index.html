@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ideas (I had an idea once)</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/ideas.css" />
+		<script src="js/jquery-1.10.1.js"></script>
+		<script src="js/jquery.textarea.js"></script>
+		<script src="js/lodash-1.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ideas.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<span class="brand">Ideas (I had an idea once)</span>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="state-loggedin"><a id="link-logout" href="#">log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="box-errors"></div>
+			<div class="state-loggedout">
+				<form id="form-login" method="post">
+					<input type="text" name="email" placeholder="Email" /><br/>
+					<input type="password" name="password" placeholder="Password" /><br/>
+					<div id="controls-login">
+						<button type="submit" id="button-login">Log in</button>
+						<a id="link-register" href="#">Register</a>
+					</div>
+					<div id="controls-register" style="display: none">
+						<input type="password" name="password2" placeholder="Password Again" /><br/>
+						<button type="submit" id="button-register">Register</button>
+						<a id="link-login" href="#">Actually wait, I've already done this</a>
+					</div>
+				</form>
+				<br/>
+				<br/>
+				<a href="#" id="link-what">What is this?</a>
+				<div id="box-what">
+					<p>This is a simple application to store and track random ideas you have.</p>
+					<p>It was made as a learning project, but you're welcome to use it if you like.</p>
+				</div>
+			</div>
+			<div class="state-loggedin">
+				<div class="row">
+					<div id="box-tags" class="span3">
+						<span class="title">Tags</span>
+						<form method="post" id="form-tags">
+							<input type="checkbox" /> Blah<br/>
+							<input type="checkbox" /> Blah<br/>
+							<input type="checkbox" /> Blah<br/>
+							<input type="checkbox" /> Blah<br/>
+							<input type="checkbox" /> Blah<br/>
+						</form>
+					</div>
+					<div class="span9">
+						<div class="box-addidea">
+							<div><form id="form-addidea" method="post">
+								<textarea name="ideaname" placeholder="New idea"></textarea><br/>
+								<input type="text" name="tags" placeholder="Tags" /><button type="submit">Add</button>
+							</form></div>
+						</div>
+						<div id="box-ideas"></div>
+					</div>
+				</div>
+			</div>
+			<div class="state-initial">
+				<img src="img/ajax-loader.gif" alt="Loading..." />
+			</div>
+		</div>
+		<div class="footer">&copy;2013 Alex Foran</div>
+	</body>
+</html>

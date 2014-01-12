@@ -1,0 +1,9 @@
+**/venv
+**/.DS_Store
+**/*.py[co]
+**/*.class
+**/build
+**/dist
+**/out
+**/*.cfg
+**/.env

@@ -1,0 +1,129 @@
+html {
+	background-color: #AAAAAA;
+	background-image: linear-gradient(to bottom, #AAAAAA 0%,#CCCCCC 100%);
+	background-image: -webkit-linear-gradient(bottom, #AAAAAA 0%,#CCCCCC 100%);
+	background-repeat: repeat-x;
+}
+
+body,
+input {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	color: #36C;
+}
+
+#templates {
+	display: none;
+}
+
+.root {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: left;
+	background-color: #E0E0E0;
+	color: #222;
+	box-shadow: 0 0 6px #222;
+}
+
+header .left {
+	float: left;
+}
+
+header .right {
+	float: right;
+	padding: 10px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 6px;
+	font-size: 0.7em;
+	color: #666;
+}
+
+.body {
+	clear: both;
+	padding: 10px;
+}
+
+.controls,
+.list {
+	background-color: inherit;
+	box-shadow: 0 0 2px #222;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	background-color: #F0F0F0;
+}
+
+.controls {
+	width: 150px;
+	margin-right: 5px;
+}
+
+.list {
+	width: 775px;
+}
+
+.controls > ul:first-child  {
+	margin-bottom: 1em;
+}
+
+.tag {
+	color: #36C;
+	display: inline-block;
+	border: 1px solid #36C;
+	background-color: #FFF;
+	padding: 1px;
+	border-radius: 2px;
+}
+
+.tag a.delete {
+	text-decoration: none;
+	color: #69C;
+}
+
+.item {
+	box-shadow: 0 0 2px #222;
+	padding: 3px;
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #E8E8E8 70%, #E0E0E0 100%);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E8E8E8 70%, #E0E0E0 100%);
+	clear: both;
+}
+
+.item input,
+.item textarea {
+	background-color: #F6F6F6;
+}
+
+.item .name,
+.item .name input[type=text],
+.item .name button {
+	font-size: 20px;
+}
+
+.item .name input[type=text] {
+	width: calc(100% - 105px);
+	width: -webkit-calc(100% - 105px);
+}
+
+.item .name button {
+	width: 90px;
+}
+
+.item .tags input[type=text] {
+	width: calc(100% - 8px);
+	width: -webkit-calc(100% - 8px);
+}
+
+.note {
+	padding: 10px;
+}

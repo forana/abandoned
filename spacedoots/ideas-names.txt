@@ -1,0 +1,76 @@
+Ships
+
+	Standard - s 2W 1E
+	Scuttlebutt - m 3W 2E
+	Brigandier - l 4W 3E
+	Dart - xs 2W 2E
+	Vigoro - l 1W 4E
+	Valiant - m 3W 3E
+	Freyr - xl 3W 2E
+	Cruiser - m 3W 2E
+	Needler - xs 1W 1E
+	Koenigwerfer - xl 4W 4E
+	Hexblade - m 2W 6E
+	Sunjammer - s 2W 2E
+	Sledgedemon - l 3W 4E
+	Darkslide - l 3W 3E
+	Scout - xs 1W 1E
+	Admiration - m 2W 2E
+	Tinagra
+	Tyrannosword
+	Moonrise
+	Ironstar
+	Crusader
+	Hellbent
+	Garuda
+
+Scales
+
+	xs = 1
+	s = 2
+	m = 3
+	l = 5
+	xl = 7
+
+Weapons
+
+	Laser Emitter - Weak attacks
+	Laser Cannon - Medium attacks
+	Pulse Laser - Medium-Strong attacks
+	Pulse Cannon - Strong attacks
+	Wave Emitter - Weak attacks that don't miss
+	Plasma Bolt - Variable-damage attack
+	Torpedo - Weak torpedo
+	Nuclear Torpedo - Medium torpedo
+	Dark Matter Torpedo - Strong torpedo
+	Giga Cannon - Very strong attack that takes a lot of energy and has an above-normal chance of missing
+	Inertia Cannon - Medium damage, halves speed
+	Temporal Cannon - Medium damage, halves recharge rates
+	Positron Cannon - Medium damage, power leech
+	Static Cannon - Medium damage, reduce accuracy for 3 turns
+
+Tactical
+
+	Recharge Shield
+	Recharge Energy
+	Phantom Drive
+	Targeting Scanner
+	Problem Resolver
+
+Stats
+
+	Shield Strength (HP)
+	Shield Recharge Rate
+	Energy Capacity (EP)
+	Energy Recharge Rate
+	Speed (evasion)
+
+Enhancements
+
+	Shield Booster
+	Capacitor
+	Torpedo Bay
+	Extended Storage
+	Shield Recharger
+	Energy Recharger
+	Repulsor

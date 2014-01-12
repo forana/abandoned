@@ -1,0 +1,2 @@
+web: python serve.py
+worker: python build.py src/build.lst

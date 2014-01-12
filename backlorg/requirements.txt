@@ -1,0 +1,4 @@
+Jinja2==2.6
+bottle==0.11.5
+distribute==0.6.31
+wsgiref==0.1.2

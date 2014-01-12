@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<style>
+			form, h4 {
+				margin: 0;
+			}
+		</style>
+	<body>
+		<iframe name="test" width="600" height="200" src="about:blank"></iframe>
+		<h4>Register</h4>
+		<form method="post" action="api/register" target="test">
+			<input type="text" placeholder="Email" name="email" />
+			<input type="password" placeholder="Password" name="pw" />
+			<button type="submit">Go</button>
+		</form>
+		<h4>Login</h4>
+		<form method="post" action="api/login" target="test">
+			<input type="text" placeholder="Email" name="email" />
+			<input type="password" placeholder="Password" name="pw" />
+			<button type="submit">Go</button>
+		</form>
+		<h4>Get</h4>
+		<form method="post" action="api/get" target="test">
+			<input type="text" placeholder="uid" name="uid" />
+			<input type="text" placeholder="secret" name="secret" />
+			<button type="submit">Go</button>
+		</form>
+		<h4>Add</h4>
+		<form method="post" action="api/add" target="test">
+			<input type="text" placeholder="uid" name="uid" />
+			<input type="text" placeholder="secret" name="secret" />
+			<input type="text" placeholder="Idea text" name="text" />
+			<input type="text" placeholder="Tags" name="tags" />
+			<button type="submit">Go</button>
+		</form>
+		<h4>Update</h4>
+		<form method="post" action="api/update" target="test">
+			<input type="text" placeholder="uid" name="uid" />
+			<input type="text" placeholder="secret" name="secret" />
+			<input type="text" placeholder="id" name="id" />
+			<input type="text" placeholder="Idea text" name="text" />
+			<input type="text" placeholder="Tags" name="tags" />
+			<button type="submit">Go</button>
+		</form>
+		<h4>Delete</h4>
+		<form method="post" action="api/delete" target="test">
+			<input type="text" placeholder="uid" name="uid" />
+			<input type="text" placeholder="secret" name="secret" />
+			<input type="text" placeholder="id" name="id" />
+			<button type="submit">Go</button>
+		</form>
+	</body>
+</html>

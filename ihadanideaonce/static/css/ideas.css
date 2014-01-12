@@ -1,0 +1,111 @@
+body {
+	padding-top: 50px;
+	min-height: 100px;
+}
+
+form {
+	margin-bottom: 0;
+}
+
+.footer {
+	font-size: 70%;
+	color: #666666;
+	text-align: center;
+}
+
+body.state-loggedin .state-loggedout,
+body.state-loggedin .state-initial,
+body.state-loggedout .state-loggedin,
+body.state-loggedout .state-initial,
+body.state-initial .state-loggedin,
+body.state-initial .state-loggedout {
+	display: none;
+}
+
+body .state-initial {
+	text-align: center;
+}
+
+.alert {
+	margin-bottom: 8px;
+}
+
+#box-tags {
+	background-color: #EEEEEE;
+	border-radius: 5px;
+}
+
+#box-tags > * {
+	padding: 10px;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.box-addidea {
+	background-color: #EEEEEE;
+	border-radius: 5px;
+}
+.box-addidea > div {
+	padding: 10px;
+}
+
+.box-addidea textarea[name=ideaname] {
+	font-size: 130%;
+	width: calc(100% - 12px);
+	margin: 0;
+	resize: none;
+}
+
+.box-addidea input,
+.box-addidea button {
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+.box-addidea input[name=tags] {
+	width: calc(100% - 50px - 14px);
+}
+.box-addidea button[type=submit] {
+	width: 50px;
+}
+
+#box-ideas {
+	margin-top: 10px;
+	background-color: #CCCCCC;
+	border-radius: 5px;
+}
+
+.idea {
+	margin: 10px;
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.idea .name {
+	font-size: 130%;
+}
+
+.idea .tag {
+	background-color: #666666;
+	margin: 1px;
+	padding: 2px;
+	border-radius: 2px;
+	color: #FFF;
+}
+
+.idea .date {
+	text-align: right;
+	font-size: 70%;
+	color: #333333;
+}
+
+.idea .remove {
+	margin-bottom: -1em;
+	text-align: right;
+}
+
+.idea .remove img {
+	border: 0;
+}

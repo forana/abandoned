@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Space</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="easel-0.4.2.js"></script>
+		<script type="text/javascript">
+			var stage;
+			
+			function init() {
+				stage=new Stage(document.getElementById("canvas"));
+				Ticker.addListener(window);
+			}
+			
+			function tick() {
+				
+				stage.update();
+			}
+		</script>
+	</head>
+	<body onload="init();">
+		<canvas width="800" height="600" id="canvas"></canvas>
+	</body>
+</html>
